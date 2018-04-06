@@ -24,7 +24,7 @@ blacklist nouveau
 echo options nouveau modeset=0
 ```
 
-Rebuld kernel image:
+Build kernel image:
 ```sh
 sudo update-initramfs -u
 ```
