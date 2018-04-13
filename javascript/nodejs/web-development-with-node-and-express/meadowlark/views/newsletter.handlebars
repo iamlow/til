@@ -1,8 +1,9 @@
 <!-- <h2>Sign up for out newsletter to receive news and specials!</h2> -->
 
 <div class="formContainer">
-  <form action="/process?form=newsletter" class="form-horizontal newsletterForm" role="form" method="POST">
-    <input type="hidden" name="_csrf" value="{{csrf}}">
+  <!-- <form action="/process?form=newsletter" class="form-horizontal newsletterForm" role="form" method="POST"> -->
+  <form action="/newsletter" class="form-horizontal newsletterForm" role="form" method="POST">
+    <!-- <input type="hidden" name="_csrf" value="{{csrf}}"> -->
     <div class="form-group">
       <label for="fieldName" class="col-sm-2 control-label">Name</label>
       <div class="col-sm-4">
@@ -12,7 +13,7 @@
     <div class="form-group">
       <label for="fieldEmail" class="col-sm-2 control-label">Email</label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="fieldEmail" required name="email">
+        <input type="email" class="form-control" id="fieldEmail" required name="email">
       </div>
     </div>
     <div class="form-group">
@@ -22,7 +23,7 @@
     </div>
   </form>
 </div>
-{{#section 'jquery'}}
+<!-- {{#section 'jquery'}}
   <script>
     $(document).ready(function() {
       $('.newsletterForm').on('submit', function(evt) {
@@ -47,4 +48,4 @@
       });
     });
   </script>
-{{/section}}
+{{/section}} -->
