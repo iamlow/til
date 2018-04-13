@@ -1,0 +1,50 @@
+<!-- <h2>Sign up for out newsletter to receive news and specials!</h2> -->
+
+<div class="formContainer">
+  <form action="/process?form=newsletter" class="form-horizontal newsletterForm" role="form" method="POST">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <div class="form-group">
+      <label for="fieldName" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="fieldName" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fieldEmail" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="fieldEmail" required name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-4">
+        <button class="btn btn-default" type="submit">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+{{#section 'jquery'}}
+  <script>
+    $(document).ready(function() {
+      $('.newsletterForm').on('submit', function(evt) {
+        evt.preventDefault();
+        var action = $(this).attr('action');
+        var $container = $(this).closest('.formContainer');
+        $.ajax({
+          url: action,
+          type: 'POST',
+          data: $(this).serialize(),
+          success: function(data) {
+            if (data.success) {
+              $container.html('<h2>Thank you!</h2>');
+            } else {
+              $container.html('There was a problem.');
+            }
+          },
+          error: function() {
+            $container.html('There was a problem.');
+          }
+        });
+      });
+    });
+  </script>
+{{/section}}

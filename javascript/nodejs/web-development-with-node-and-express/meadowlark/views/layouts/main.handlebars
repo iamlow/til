@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Meadowlark</title>
+  {{{_sections.head}}}
   {{#if showTests}}
     <link rel="stylesheet" href="/vendor/mocha.css">
   {{/if}}
-  <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -27,5 +28,7 @@
     {{/if}}
     <script>mocha.run();</script>
   {{/if}}
+  <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
+  {{{_sections.jquery}}}
 </body>
 </html>
