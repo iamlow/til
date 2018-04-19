@@ -19,6 +19,18 @@ var handlebars = require('express-handlebars').create({
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
+
+switch(app.get('env')) {
+  case 'development':
+    app.use(require('morgan')('dev'));
+    break;
+  case 'production':
+    app.use(require('express-logger')({
+      path: __dirname + '/log/requests.log'
+    }));
+    break;
+}
+
 app.use(express.static(__dirname + '/public'));
 
 app.use(function(req, res, next) {
@@ -205,6 +217,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(app.get('port'), function() {
-  console.log('Express started on http://localhost:' +
-      app.get('port') + '; press Ctrl-C to terminate.');
+  console.log('Express started in ' + app.get('env') +
+      ' mode on http://localhost:' + app.get('port') +
+      '; press Ctrl-C to terminate.');
 });
