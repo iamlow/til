@@ -1,25 +1,25 @@
 Get Started
 ===========
 
-## Quick Start
+# Quick Start
 
-### Install Hugo for macOS
+## Install Hugo for macOS
 ```sh
 brew install hugo
 ```
 
-### Create a New Site
+## Create a New Site
 ```sh
 hugo new site quickstart
 ```
 
-### Add a theme
+## Add a theme
 ```sh
 cd quickstart/themes
 git clone https://github.com/sethmacleod/aerial.git
 ```
 
-### Config file
+## Config file
 Copy the config.toml file from the exampleSite directory into root directory of Hugo:
 ```sh
 cp -rf ./aerial/exampleSite/* ../
@@ -32,22 +32,22 @@ vi ../config.toml
 baseurl = "/"
 ```
 
-### Github
-#### New repository for webpages
+## Github
+### New repository for webpages
 `git@github.com:iamlow/hugo-pages.git`
 
-#### Add submodule
+### Add submodule
 ```sh
 git submodule add -b master git@github.com:iamlow/hugo-pages.git public
 ```
 
-### Generate web site
+## Generate web site
 ```sh
 hugo -t aerial
 ```
 > This generates your website to the public/ directory by default
 
-### Deploy to github
+## Deploy to github
 The following are the contents of the deploy.sh script:
 ```sh
 #!/bin/bash
@@ -81,16 +81,16 @@ Run deploy.sh script:
 ./deploy.sh "First commit!"
 ```
 
-### Github repository settings
+## Github repository settings
 You will also need to set master as your publishable branch from within the GitHub UI:
 
 Go to **Settings** → **GitHub Pages**
 From **Source**, select “master branch” and then **Save**.
 
-### Connect to the site with a browser
+## Connect to the site with a browser
 [`https://iamlow.github.io/hugo-pages`](https://iamlow.github.io/hugo-pages)
 
-## References
+# References
 - https://gohugo.io/getting-started/quick-start/
 - https://gohugo.io/getting-started/usage/
 - https://gohugo.io/hosting-and-deployment/hosting-on-github/
