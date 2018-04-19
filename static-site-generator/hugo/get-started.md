@@ -88,7 +88,7 @@ Go to **Settings** → **GitHub Pages**
 From **Source**, select “master branch” and then **Save**.
 
 ### Connect to the site with a browser
-`https://iamlow.github.io/hugo-pages`
+[`https://iamlow.github.io/hugo-pages`](https://iamlow.github.io/hugo-pages)
 
 ## References
 - https://gohugo.io/getting-started/quick-start/
