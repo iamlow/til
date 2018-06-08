@@ -1,6 +1,6 @@
 #### Change hostname
 ```sh
-hostnamectl --set-hostname tx1
+hostnamectl set-hostname tx1
 ```
 
 #### Change these lines to /etc/hosts:
