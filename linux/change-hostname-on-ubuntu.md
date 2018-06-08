@@ -1,9 +1,9 @@
-#### Change hostname
+## Change hostname
 ```sh
 hostnamectl set-hostname tx1
 ```
 
-#### Change these lines to /etc/hosts:
+## Change these lines to /etc/hosts:
 
 ###### Before
 ```sh
@@ -15,7 +15,7 @@ hostnamectl set-hostname tx1
 127.0.0.1 tx1
 ```
 
-#### Reboot
+## Reboot
 ```sh
 sudo reboot
 ```
