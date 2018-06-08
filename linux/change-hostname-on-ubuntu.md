@@ -5,12 +5,12 @@ hostnamectl --set-hostname tx1
 
 #### Change these lines to /etc/hosts:
 
-##### Before
+###### Before
 ```sh
 127.0.0.1 tegra-ubuntu
 ```
 
-##### After
+###### After
 ```sh
 127.0.0.1 tx1
 ```
