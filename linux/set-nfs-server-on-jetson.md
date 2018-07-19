@@ -8,7 +8,7 @@
 ### To install
 
 ```sh
-sudo apt-get install nfs-kernel-server portmap nfs-common
+sudo apt-get install nfs-kernel-server nfs-common rpcbind
 ```
 
 > NFS is failed to install nfs-server on TX1.
