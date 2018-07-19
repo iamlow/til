@@ -26,6 +26,12 @@ sudo apt-get install libgstreamer1.0-dev \
 gst-inspect-1.0 --version 
 ```
 
+## Clear the registry cache file, in case there is an issue
+
+```sh
+rm ~/.cache/gstreamer-1.0/registry.aarch64.bin
+```
+
 ## References
 
 - [ACCELERATED GSTREAMER USER GUIDE Release 28.2](https://developer.download.nvidia.com/embedded/L4T/r28_Release_v2.0/GA/Docs/Jetson_TX1_and_TX2_Accelerated_GStreamer_User_Guide.pdf)
