@@ -11,6 +11,8 @@
 sudo apt-get install nfs-kernel-server portmap nfs-common
 ```
 
+> NFS is failed to install nfs-server on TX1.
+
 ### To enter the following in /etc/exports 
 
 ```sh
