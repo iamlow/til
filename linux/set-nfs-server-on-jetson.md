@@ -52,7 +52,10 @@ showmount -e [SERVER-IP-ADDRESS]
 mount -t nfs [SERVER-IP-ADDRESS]:/home/nvidia/workspace /mnt
 ```
 
-> NFS is too slow.
+## Problems
+- *NFS is too slow on TX2.*
+- *NFS is failed to install nfs-server on TX1.*
+
 
 ## References
 - https://www.cyberciti.biz/faq/how-to-ubuntu-nfs-server-configuration-howto/
