@@ -49,8 +49,10 @@ showmount -e [SERVER-IP-ADDRESS]
 ### To mount nfs-server enter below:
 
 ```sh
-mount -t nfs 192.168.0.3:/home/nvidia/workspace /Users/iamlow/workspace/mnt
+mount -t nfs [SERVER-IP-ADDRESS]:/home/nvidia/workspace /mnt
 ```
+
+> NFS is too slow.
 
 ## References
 - https://www.cyberciti.biz/faq/how-to-ubuntu-nfs-server-configuration-howto/
