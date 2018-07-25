@@ -8,6 +8,9 @@
 ### To install
 
 ```sh
+sudo add-apt-repository universe 
+sudo add-apt-repository multiverse 
+sudo apt-get update 
 sudo apt-get install nfs-kernel-server nfs-common rpcbind
 ```
 
