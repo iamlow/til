@@ -16,7 +16,7 @@ sudo apt-get install sshpass
 
 #### How to use
 ```sh
-sshpass -p [password] ssh-copy-id [id]@[url]
+sshpass -p [password] ssh-copy-id [id]@[url] -p [port number]
 ```
 
 #### References:
