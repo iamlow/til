@@ -15,7 +15,12 @@ virtualenv is a tool to create isolated Python environments.
 virtualenv .venv
 ```
 
-### python 
+### Set option for python version
+
+```sh
+virtualenv -p python3 .venv
+```
+
 ## Active
 
 ```sh
