@@ -8,6 +8,12 @@ about the symbolic links
 update-alternatives --list java
 ```
 
+## Show all lists
+
+```sh
+update-alternatives --all
+```
+
 ## Install
 
 ```sh
