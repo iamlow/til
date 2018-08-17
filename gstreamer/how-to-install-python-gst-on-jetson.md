@@ -15,3 +15,7 @@ apt-get install python-gst-1.0 python3-gst-1.0
 ```sh
 apt-get install python-gi python3-gi
 ```
+
+## References
+
+- [PyGObject](https://pygobject.readthedocs.io/en/latest/getting_started.html)
