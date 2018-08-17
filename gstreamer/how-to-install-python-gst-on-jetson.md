@@ -10,7 +10,7 @@ apt-cache search python gobject gst
 apt-get install python-gst-1.0 python3-gst-1.0
 ```
 
-### Install a gi
+### Install a gi(GObject Introspection)
 
 ```sh
 apt-get install python-gi python3-gi
