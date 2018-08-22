@@ -39,3 +39,21 @@ Failing command: ['/root/workspace/kkk/venv3/bin/python3.5', '-Im', 'ensurepip',
 ```sh
 python3 -m venv venv --without-pip
 ```
+
+## Activate a virtual environment
+
+```sh
+source venv/bin/activate
+```
+
+OR
+
+```sh
+. venv/bin/activate
+```
+
+## Deactivate
+
+```sh
+deactivate
+```
