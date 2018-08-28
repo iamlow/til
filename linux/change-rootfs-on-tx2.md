@@ -5,8 +5,13 @@
 
 ## Prerequires
 
-- Toolchanin
-- Rootfs
+- [Jetson TX2 64-bit Driver Package](https://developer.nvidia.com/embedded/dlc/tx2-driver-package-r2821)
+
+> Jetson TX2: Tegra186_Linux_R28.2.1_aarch64.tbz2
+
+- [Sample Root File System](https://developer.nvidia.com/embedded/dlc/sample-root-filesystem-r2821)
+
+> Tegra_Linux_Sample-Root-Filesystem_R28.2.1_aarch64.tbz2
 
 ## How to change to an usb flash
 
