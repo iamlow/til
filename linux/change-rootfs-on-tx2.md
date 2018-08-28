@@ -40,6 +40,17 @@ sudo ./flash.sh jetson-tx2 sda1
 
 > 위 과정이 정상적으로 종료되면 자동으로 usb flash로 부팅함.
 
+### rootfs 설치 여부
+
+flash.sh <rootdev> 인자를 mmcblk0p1로 설정한 경우에만 rootfs을 system.img로 만들어 설치, 다른 장치에는 설치하지 않는 것으로 생각됨. help 페이지에도 
+아래와 같은 문구가 있음
+  
+```
+        -S <size> ------------ Rootfs size in bytes. Valid only for internal
+                               rootdev. KiB, MiB, GiB short hands are allowed,
+                               for example, 1GiB means 1024 * 1024 * 1024 bytes.
+```
+
 ## Check
 
 ```sh
