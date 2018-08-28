@@ -51,6 +51,11 @@ flash.sh <rootdev> 인자를 mmcblk0p1로 설정한 경우에만 rootfs을 syste
                                for example, 1GiB means 1024 * 1024 * 1024 bytes.
 ```
 
+```
+-rwxr-xr-x 1 root   root    3498460140 Aug 28 17:14 system.img
+-rw-r--r-- 1 root   root   30064771072 Aug 28 17:13 system.img.raw
+```
+
 ## Check
 
 ```sh
