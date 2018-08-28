@@ -71,6 +71,14 @@ df -h
 
 > 위 명령어를 사용하여 변경된 저장소의 용량을 확인할 수 있다.
 
+## Trace
+
+### eMMC로 추정되는 장치
+
+```sh
+/dev/loop0       28G   44M   26G   1% /hdd/jetpack/64_TX2/Linux_for_Tegra/bootloader/mnt
+```
+
 ## References
 
 - [L4T Quick Start Guide ](https://developer.download.nvidia.com/embedded/L4T/r28_Release_v2.1/l4t_quick_start_guide.txt?VObtIlYOjrZCPaqN-5O3Ns9WUU8zy5DaZv_xeeCvUs_b2xrQmNtLyoSwn9aykp0i5XYIFxkJYQSryJSx14siMWyZ0xTSMUYJyMHlnjv_usF7NTV6oX1XC6DNeUZy0M0gJD0oFkjrwqti-UDhvege3NXpFvhFjg)
