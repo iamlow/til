@@ -39,8 +39,11 @@ sudo tar xfj Tegra_Linux_Sample-Root-Filesystem_R28.2.1_aarch64.tbz2
 
 ## How to flash u-boot on Ubuntu Host PC
 
+- rootdev를 mmcblk0p1으로 설정하면 u-boot, kernel, rootfs까지 설치한다. 
+- rootdev를 mmcblk1p1, sda1으로 설정하면 **rootfs를 설치안함.**, 따로 설치과정이 필요함.
+
 ```sh
-sudo ./flash.sh jetson-tx2 sda1
+sudo ./flash.sh jetson-tx2 <rootdev>
 ```
 
 > 위 과정이 정상적으로 종료되면 자동으로 usb flash로 부팅함.
