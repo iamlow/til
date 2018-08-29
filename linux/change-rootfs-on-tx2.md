@@ -46,7 +46,7 @@ sudo tar xfj Tegra_Linux_Sample-Root-Filesystem_R28.2.1_aarch64.tbz2
 sudo ./flash.sh jetson-tx2 <rootdev>
 ```
 
-> 위 과정이 정상적으로 종료되면 자동으로 usb flash로 부팅함.
+> 위 과정이 정상적으로 종료되면 자동으로 부팅함.
 
 ### rootfs 설치 여부
 
