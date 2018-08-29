@@ -2,7 +2,9 @@
 
 Just tried installing docker on JetPack 3.2.1 — L4T R28.2.1 for Jetson TX2
 
-## Set up the docker repository
+## For docker
+
+### Set up the docker repository
 
 ```sh
 sudo apt-get update
@@ -11,21 +13,37 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
-## Install Docker CE
+### Install Docker CE
 
 ```sh
 sudo apt-get update
 sudo apt-get install docker-ce
 ```
 
-## Verify the installation
+### Verify the installation
 
 ```sh
 sudo docker run hello-world
 ```
 
-## Add user to group docker
+### Add user to group docker
 
 ```sh
 sudo gpasswd -a <user id> docker
+```
+
+## For docker-compose
+
+### Add package repositories
+
+Uncomment universe package repositories in '/etc/apt/sources.list' file.
+
+### Check version
+
+```sh
+$ docker-compose version
+docker-compose version 1.8.0, build unknown
+docker-py version: 1.9.0
+CPython version: 2.7.11+
+OpenSSL version: OpenSSL 1.0.2g-fips  1 Mar 2016
 ```
