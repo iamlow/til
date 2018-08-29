@@ -79,6 +79,141 @@ df -h
 /dev/loop0       28G   44M   26G   1% /hdd/jetpack/64_TX2/Linux_for_Tegra/bootloader/mnt
 ```
 
+### Boot sequence order of Jetson TX2
+
+1. SD Card
+1. eMMC
+1. USB
+1. Network
+
+### rootdev를 mmcblk0p1(eMMC), mmcblk1p1(SD Card), sda1(USB Flash)설정 후 테스트
+
+1. flash rootdev
+1. test scenario: No SD card, Fommated eMMC without rootfs, USB Flash with rootfs
+
+#### rootdev를 mmcblk0p1로 설정
+
+```sh
+sudo ./flash.sh jetson-tx2 mmcblk0p1
+```
+
+Result
+
+```
+U-Boot 2016.07-g9c3b9a4 (May 17 2018 - 00:08:48 -0700)
+
+TEGRA186
+Model: NVIDIA P2771-0000-500
+DRAM:  7.8 GiB
+MC:   Tegra SD/MMC: 0, Tegra SD/MMC: 1
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0: ethernet@2490000
+Hit any key to stop autoboot:  0
+MMC: no card present
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1...
+starting USB...
+No controllers found
+USB is stopped. Please issue 'usb start' first.
+starting USB...
+No controllers found
+ethernet@2490000 Waiting for PHY auto negotiation to complete........ done
+BOOTP broadcast 1
+BOOTP broadcast 2
+DHCP client bound to address 192.168.0.11 (272 ms)
+*** Warning: no boot file name; using 'C0A8000B.img'
+Using ethernet@2490000 device
+TFTP from server 0.0.0.0; our IP address is 192.168.0.11; sending t
+```
+
+> Not found usb device
+
+#### rootdev를 mmcblk1p1로 설정
+
+```sh
+sudo ./flash.sh jetson-tx2 mmcblk1p1
+```
+
+Result
+
+```
+TEGRA186
+Model: NVIDIA P2771-0000-500
+DRAM:  7.8 GiB
+MC:   Tegra SD/MMC: 0, Tegra SD/MMC: 1
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0: ethernet@2490000
+Hit any key to stop autoboot:  0
+MMC: no card present
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1...
+Found /boot/extlinux/extlinux.conf
+Retrieving file: /boot/extlinux/extlinux.conf
+216 bytes read in 73 ms (2 KiB/s)
+p2771-0000 SD Card boot options
+1:      primary kernel
+Enter choice: 1:        primary kernel
+Retrieving file: /boot/Image
+.
+.
+ERROR: mmcblk1p1 not found
+.
+.
+```
+
+> USB Device를 찾지 않음. mmcblk1p1 장치를 찾을 수 없다고 표시함.
+
+#### rootdev를 sda1 설정
+
+```sh
+sudo ./flash.sh jetson-tx2 sda1
+```
+
+Result
+
+```
+DRAM:  7.8 GiB
+MC:   Tegra SD/MMC: 0, Tegra SD/MMC: 1
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0: ethernet@2490000
+Hit any key to stop autoboot:  0
+MMC: no card present
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1...
+Found /boot/extlinux/extlinux.conf
+Retrieving file: /boot/extlinux/extlinux.conf
+233 bytes read in 74 ms (2.9 KiB/s)
+p2771-0000 USB boot options
+1:      primary kernel
+Enter choice: 1:        primary kernel
+Retrieving file: /boot/initrd
+6237769 bytes read in 205 ms (29 MiB/s)
+Retrieving file: /boot/Image
+```
+
+> USB Device 부팅 성공
+
+#### Conclusion
+
+- USB Flash 부팅하려면 rootdev를 sda1으로 설정하여 Flash해야함
+- rootdev를 mmcblk0p1과 mmcblk1p1로 설정하는 것은 둘 다 USB Flash 부팅안됨
+- USB Flash 부팅속도 느림, SD Card는 USB에 비해 빠르나, eMMC에 비해 느림
+
 ## References
 
 - [L4T Quick Start Guide ](https://developer.download.nvidia.com/embedded/L4T/r28_Release_v2.1/l4t_quick_start_guide.txt?VObtIlYOjrZCPaqN-5O3Ns9WUU8zy5DaZv_xeeCvUs_b2xrQmNtLyoSwn9aykp0i5XYIFxkJYQSryJSx14siMWyZ0xTSMUYJyMHlnjv_usF7NTV6oX1XC6DNeUZy0M0gJD0oFkjrwqti-UDhvege3NXpFvhFjg)
