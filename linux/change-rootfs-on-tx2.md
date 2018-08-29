@@ -21,7 +21,7 @@
 sudo tar xpf Tegra186_Linux_R28.2.1_aarch64.tbz2
 cd Linux_for_Tegra/rootfs
 sudo tar xpf ../../Tegra_Linux_Sample-Root-Filesystem_R28.2.1_aarch64.tbz2
-cd ../..
+cd ..
 sudo ./apply_binaries.sh
 ```
 
