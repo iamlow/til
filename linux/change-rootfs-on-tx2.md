@@ -15,6 +15,18 @@
 
 ## How to change to an usb flash
 
+### Extract a driver package and a simple root file system
+
+```sh
+sudo tar xpf Tegra186_Linux_R28.2.1_aarch64.tbz2
+cd Linux_for_Tegra/rootfs
+sudo tar xpf ../../Tegra_Linux_Sample-Root-Filesystem_R28.2.1_aarch64.tbz2
+cd ../..
+sudo ./apply_binaries.sh
+```
+
+> Must be use 'sudo' command
+
 ### Make a usb flash on Ubuntu Host PC
 
 ```sh
