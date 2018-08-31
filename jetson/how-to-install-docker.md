@@ -38,6 +38,18 @@ sudo gpasswd -a <user id> docker
 
 Uncomment universe package repositories in '/etc/apt/sources.list' file.
 
+### Update
+
+```sh
+sudo apt-get update
+```
+
+### Install
+
+```sh
+sudo apt-get install docker-compose
+```
+
 ### Check version
 
 ```sh
