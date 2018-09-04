@@ -31,6 +31,13 @@ gst-inspect-1.0 --version
 ```sh
 rm ~/.cache/gstreamer-1.0/registry.aarch64.bin
 ```
+## To install gstreamer for python
+
+```sh
+sudo apt-get install -y --no-install-recommends \
+    python-pip python-gst-1.0 python-gi \
+    python3-pip python3-venv python3-gst-1.0 python3-gi
+```
 
 ## References
 
