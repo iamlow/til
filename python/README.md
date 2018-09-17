@@ -45,6 +45,12 @@ export LC_ALL=C
 
 ## setuptools
 
+### How to install
+
+```sh
+pip install setuptools
+```
+
 ### setup.py
 
 ## Kite
