@@ -4,6 +4,11 @@
 
 ## pyenv
 
+### On Ubuntu
+
+-   https://github.com/pyenv/pyenv
+-   https://github.com/pyenv/pyenv-installer
+
 ## pyvenv
 
 ## virtualenv
