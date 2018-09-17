@@ -20,6 +20,21 @@ pyinstaller -F [filename]
 ./dist/filename
 ```
 
+### Runtime error occurred in venv!
+
+```sh
+Traceback (most recent call last):
+  File "test.py", line 2, in <module>
+    import zmq
+ImportError: No module named zmq
+```
+
+> Check python version using pyenv!
+
+```sh
+pyenv versions
+```
+
 ## References
 
 https://pyinstaller.readthedocs.io/en/stable/index.html
