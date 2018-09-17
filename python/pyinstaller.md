@@ -31,7 +31,7 @@ ImportError: No module named zmq
 
 > Check python version using pyenv!
 
-[![asciicast](https://asciinema.org/a/uNzxmsVg8jY2S8lBkw7R5HCgc.png)](https://asciinema.org/a/uNzxmsVg8jY2S8lBkw7R5HCgc)
+[![asciicast](https://asciinema.org/a/zdoefFZ34mx43QnIhNRf5lntA.png)](https://asciinema.org/a/zdoefFZ34mx43QnIhNRf5lntA)
 
 ## References
 
