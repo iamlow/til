@@ -1,6 +1,18 @@
 # Keywords
 
-## PyCharm
+## Editor
+
+#### PyCharm
+
+#### Kite
+
+## Python Package Project Template
+
+#### cookiecutter
+
+```sh
+pip install cookiecutter
+```
 
 ## pyenv
 
@@ -56,5 +68,3 @@ pip install setuptools
 ```
 
 ### setup.py
-
-## Kite
