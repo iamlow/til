@@ -42,7 +42,7 @@ export LC_ALL=C
 ### freeze
 
 ```sh
-pip freeze
+pip freeze requirements.txt
 ```
 
 ### PyPi
