@@ -8,11 +8,27 @@
 
 ##### Python Plugin (Microsoft)
 
-> 내가 부족해서 그런지 Virtual Environment에서 python, pylint 관련 오류가 발생함
+###### pylint 관련 오류가 발생함
+
+```
+pylint medium.py
+************* Module medium
+medium.py:34:0: C0330: Wrong continued indentation (add 14 spaces).
+        zmq.XSUB, 'inproc://0xsub', zmq.XPUB, 'inproc://0xpub')
+        ^             | (bad-continuation)
+medium.py:1:0: C0111: Missing module docstring (missing-docstring)
+medium.py:7:0: C0103: Constant name "logger" doesn't conform to UPPER_CASE naming style (invalid-name)
+medium.py:10:0: C0111: Missing function docstring (missing-docstring)
+medium.py:34:8: E1101: Module 'zmq' has no 'XSUB' member (no-member)
+medium.py:34:36: E1101: Module 'zmq' has no 'XPUB' member (no-member)
+
+------------------------------------------------------------------
+Your code has been rated at 3.64/10 (previous run: 5.91/10, -2.27)
+```
+
+> pyzmq의 특정 멤버를 찾지 못함. no-member 
 
 ##### Kite
-
-> Virtual Environment 관련된 이슈가 특별히 없음
 
 ## Python Package Project Template
 
