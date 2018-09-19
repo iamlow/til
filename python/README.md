@@ -4,7 +4,15 @@
 
 #### PyCharm
 
-#### Kite
+#### Visual Studio Code
+
+##### Python Plugin (Microsoft)
+
+> 내가 부족해서 그런지 Virtual Environment에서 python, pylint 관련 오류가 발생함
+
+##### Kite
+
+> Virtual Environment 관련된 이슈가 특별히 없음
 
 ## Python Package Project Template
 
