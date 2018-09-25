@@ -96,3 +96,11 @@
    brew tap caskroom/fonts
    brew cask install font-hack-nerd-font
    ```
+   
+   ```sh
+   # add to ~/.zshrc
+   alias vim="nvim"
+   alias vi="nvim"
+   alias vimdiff="nvim -d"
+   export EDITOR=/usr/local/bin/nvim
+   ```
