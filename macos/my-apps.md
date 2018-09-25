@@ -9,10 +9,10 @@
 -   msoffice for mac
 -   iterm2
 -   zsh
-  ```sh
-  brew install zsh zsh-completions
-  chsh -s /usr/bin/zsh
-  ```
+    ```sh
+    brew install zsh zsh-completions
+    chsh -s /usr/bin/zsh
+    ```
   - oh-my-zsh
     ```
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
