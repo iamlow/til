@@ -36,4 +36,8 @@
 -   intellij idea ce
 -   qbittorrent
 -   web server for chrome
--   
+
+## New
+
+- [hyper](https://hyper.is)
+- [tmux](https://github.com/tmux/tmux/wiki)
