@@ -90,3 +90,9 @@
   ```sh
   brew install tmux
   ```
+- [neovim](https://neovim.io)
+   ```sh
+   brew install neovim
+   brew tap caskroom/fonts
+   brew cask install font-hack-nerd-font
+   ```
