@@ -49,8 +49,8 @@
 -   firefox
 -   grammarly
 -   hwp 2014 vp viewer
--   typora
--   kite
+-   typora (x)
+-   kite (x)
 -   onedrive
 -   naver cloud
 -   box sync
