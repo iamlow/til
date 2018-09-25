@@ -77,6 +77,15 @@
   ```sh
   brew cask install hyper
   ```
+  - zsh
+    ```sh
+    # add to hyper.js
+    shell: '/usr/local/bin/zsh',
+    ```
+  - oh-my-zsh
+    ```sh
+    fontFamily: '"Droid Sans Mono Awesome", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    ```
 - [tmux](https://github.com/tmux/tmux/wiki)
   ```sh
   brew install tmux
