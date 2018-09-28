@@ -70,6 +70,8 @@
 -   qbittorrent
 -   web server for chrome
 -   [homebrew](https://brew.sh/index_ko)
+-   tig
+-   cookiecutter
 
 ## New
 
