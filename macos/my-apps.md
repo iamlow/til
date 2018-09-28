@@ -74,8 +74,10 @@
     ```sh
     brew install tig
     ```
+    
     - https://jonas.github.io/tig/doc/manual.html
-  
+    - https://ujuc.github.io/2016/02/10/tig-manual/
+    
 -   cookiecutter
   
 ## New
