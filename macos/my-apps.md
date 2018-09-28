@@ -71,8 +71,13 @@
 -   web server for chrome
 -   [homebrew](https://brew.sh/index_ko)
 -   tig
+    ```sh
+    brew install tig
+    ```
+    - https://jonas.github.io/tig/doc/manual.html
+  
 -   cookiecutter
-
+  
 ## New
 
 - [hyper](https://hyper.is)
