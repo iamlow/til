@@ -51,6 +51,20 @@ pip install cookiecutter
 
 ## pip
 
+### how to install
+
+- Download: https://bootstrap.pypa.io/get-pip.py
+
+```sh
+wget https://bootstrap.pypa.io/get-pip.py
+```
+
+- Install
+
+```sh
+python get-pip.py
+```
+
 ### locale.Error: unsupported locale setting
 
 ```sh
