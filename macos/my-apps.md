@@ -8,40 +8,62 @@
 -   chrome
 -   msoffice for mac
 -   iterm2
--   zsh
-    ```sh
-    brew install zsh zsh-completions
-    chsh -s /usr/bin/zsh
-    ```
-  - oh-my-zsh
-    ```
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ```
-    - theme
-      ```sh
-      git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k 
-      # add to ~/.zshrc
-      ZSH_THEME="powerlevel9k/powerlevel9k"
-      ```
-    - font
-      ```sh
-      brew tap homebrew/cask-fonts
-      brew cask install font-awesome-terminal-fonts 
-      ```
-    - plugin
-      ```sh
-      # zsh-syntax-highlighting
-      git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-      # zsh-autosuggestions
-      git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-      # add to ~/.zshrc
-      plugins=(
-        git
-        zsh-syntax-highlighting
-        zsh-autosuggestions
-      )
-      ```
+## zsh
+
+### how to install
+
+```sh
+brew install zsh zsh-completions
+chsh -s /usr/bin/zsh
+```
+
+### How to install oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### How to setup my theme
+
+##### powerlevel9k
+
+```sh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k 
+# add to ~/.zshrc
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+#### How to install fonts
+
+##### font-awesome-terminal-fonts 
+
+```sh
+brew tap homebrew/cask-fonts
+brew cask install font-awesome-terminal-fonts 
+```
+
+##### powerline fonts
+
+- https://github.com/powerline/fonts
+
+#### How to install plugins
+
+```sh
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# add to ~/.zshrc
+plugins=(
+git
+zsh-syntax-highlighting
+zsh-autosuggestions
+)
+```
+
 -   docker
 -   pocket
 -   dropbox
