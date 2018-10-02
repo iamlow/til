@@ -34,23 +34,25 @@ sudo gpasswd -a <user id> docker
 
 ## For docker-compose
 
-### Add package repositories
+### Installation using apt (**DEPRECATED**)
+
+#### Add package repositories
 
 Uncomment universe package repositories in '/etc/apt/sources.list' file.
 
-### Update
+#### Update
 
 ```sh
 sudo apt-get update
 ```
 
-### Install
+#### Install
 
 ```sh
 sudo apt-get install docker-compose
 ```
 
-### Check version
+#### Check version
 
 ```sh
 $ docker-compose version
