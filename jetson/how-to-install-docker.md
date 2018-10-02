@@ -59,3 +59,11 @@ docker-py version: 1.9.0
 CPython version: 2.7.11+
 OpenSSL version: OpenSSL 1.0.2g-fips  1 Mar 2016
 ```
+
+### How to update a docker-compose
+
+```sh
+sudo apt-get remove docker-compose
+sudo apt-get install python-pip
+sudo pip install docker-compose
+```
