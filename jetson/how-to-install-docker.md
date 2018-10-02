@@ -60,10 +60,17 @@ CPython version: 2.7.11+
 OpenSSL version: OpenSSL 1.0.2g-fips  1 Mar 2016
 ```
 
-### How to update a docker-compose
+### How to remove and install a docker-compose using pip
 
 ```sh
 sudo apt-get remove docker-compose
 sudo apt-get install python-pip
 sudo pip install docker-compose
+```
+
+Check version
+
+```sh
+docker-compose -v
+docker-compose version 1.22.0, build f46880f
 ```
