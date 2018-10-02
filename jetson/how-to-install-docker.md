@@ -70,9 +70,13 @@ sudo apt-get install python-pip
 sudo pip install docker-compose
 ```
 
-Check version
+Check version:
 
 ```sh
 docker-compose -v
 docker-compose version 1.22.0, build f46880f
 ```
+
+References:
+
+- https://docs.docker.com/compose/install/#install-compose
