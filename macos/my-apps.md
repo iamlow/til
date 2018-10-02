@@ -26,6 +26,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 #### How to setup my theme
 
+##### agnoster
+
+```sh
+# add to ~/.zshrc
+ZSH_THEME="agnoster"
+```
+
 ##### powerlevel9k
 
 ```sh
