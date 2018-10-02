@@ -58,9 +58,9 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 
 # add to ~/.zshrc
 plugins=(
-git
-zsh-syntax-highlighting
-zsh-autosuggestions
+    git
+    zsh-syntax-highlighting
+    zsh-autosuggestions
 )
 ```
 
