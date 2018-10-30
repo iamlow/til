@@ -5,8 +5,14 @@ Sshpass is a tool for non-interactivly performing password authentication with S
 
 ### How to install
 ##### Mac OS:
+
+**Deprecated**
 ```sh
 brew install https://raw.github.com/eugeneoden/homebrew/eca9de1/Library/Formula/ss
+```
+
+```sh
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 ```
 
 ##### Ubuntu:
@@ -19,5 +25,7 @@ sudo apt-get install sshpass
 sshpass -p [password] ssh-copy-id [id]@[url] -p [port number]
 ```
 
-#### References:
-https://sourceforge.net/projects/sshpass
+#### References
+
+- https://sourceforge.net/projects/sshpass
+- https://gist.github.com/arunoda/7790979
