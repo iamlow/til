@@ -11,6 +11,8 @@ Sshpass is a tool for non-interactivly performing password authentication with S
 brew install https://raw.github.com/eugeneoden/homebrew/eca9de1/Library/Formula/ss
 ```
 
+OR
+
 ```sh
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 ```
