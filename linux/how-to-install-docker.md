@@ -20,6 +20,10 @@ sudo apt-get update
 sudo apt-get install docker-ce
 ```
 
+> `18.06.1~ce~3-0~ubuntu` 설치성공.
+
+> `18.09.0~3-0~ubunt` 설치실패.
+
 ### Verify the installation
 
 ```sh
