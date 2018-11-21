@@ -21,7 +21,7 @@ sudo vi /etc/modprobe.d/blacklist-nouveau.conf
 Add below text at blacklist file:
 ```sh
 blacklist nouveau
-echo options nouveau modeset=0
+options nouveau modeset=0
 ```
 
 Build kernel image:
