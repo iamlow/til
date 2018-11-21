@@ -1,5 +1,6 @@
-Install nvidia driver on ubuntu 16.04
-=====================================
+# Install nvidia driver on ubuntu
+
+## Unbuntu 16.04
 
 Download nvidia driver at [nvidia](http://www.nvidia.com)
 
