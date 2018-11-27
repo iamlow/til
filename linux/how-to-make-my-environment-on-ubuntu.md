@@ -22,7 +22,7 @@ sudo adduser iamlow
 sudo usermod -aG sudo iamlow
 ```
 
-**Reference**
+**References:**
 
 - [How To Add, Delete, and Grant Sudo Privileges to Users on a Debian VPS](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)
 - [Add user](https://twpower.github.io/31-add-user-in-ubuntu)
@@ -40,3 +40,7 @@ sudo apt-get install zsh
 ```sh
 chsh -s /usr/bin/zsh
 ```
+
+**References:**
+
+- https://the-illusionist.me/47
