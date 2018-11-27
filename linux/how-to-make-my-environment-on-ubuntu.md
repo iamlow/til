@@ -32,7 +32,7 @@ sudo usermod -aG sudo iamlow
 ### Install zsh
 
 ```sh
-sudo apt-get install zsh
+sudo apt-get install git-core zsh zsh-syntax-highlighting
 ```
 
 ### Change my default shell
@@ -41,6 +41,43 @@ sudo apt-get install zsh
 chsh -s /usr/bin/zsh
 ```
 
-**References:**
+### Install oh-my-zsh
 
-- https://the-illusionist.me/47
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+**OR**
+
+```sh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+#### Theme
+
+https://github.com/sindresorhus/pure
+
+### Install plugins
+
+```sh
+# zsh-completions
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# add to ~/.zshrc
+plugins=(
+    git
+    zsh-zsh-completions
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+```
+
+### Install fonts
+
+Powerline fonts: https://github.com/powerline/fonts
