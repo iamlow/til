@@ -81,3 +81,15 @@ plugins=(
 ### Install fonts
 
 Powerline fonts: https://github.com/powerline/fonts
+
+## Gnome Terminal Themes
+
+```sh
+sudo apt-get install dconf-cli
+wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh
+```
+
+**References:**
+
+- https://mayccoll.github.io/Gogh/#0
+
