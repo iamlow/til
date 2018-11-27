@@ -72,7 +72,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 # add to ~/.zshrc
 plugins=(
     git
-    zsh-zsh-completions
+    zsh-completions
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
