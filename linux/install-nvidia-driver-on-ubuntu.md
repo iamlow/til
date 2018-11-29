@@ -4,7 +4,11 @@
 
 http://christopher5106.github.io/nvidia/2016/12/30/commands-nvidia-install-ubuntu-16-04.html
 
-> Check Version
+## On ubuntu 18.04
+
+https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
+
+## Check a driver version
 
 ```sh
 ubuntu@uhost:~$ nvidia-smi
@@ -26,7 +30,3 @@ Thu Nov 29 16:33:29 2018
 |    0                    Not Supported                                       |
 +-----------------------------------------------------------------------------+
 ```
-
-## On ubuntu 18.04
-
-https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
