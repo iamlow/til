@@ -81,6 +81,20 @@ docker-compose -v
 docker-compose version 1.22.0, build f46880f
 ```
 
+## Install Docker CE with script
+
+```sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo docker run hello-world
+```
+
+### Add user to group docker
+
+```sh
+sudo usermod -aG docker pi
+```
+
 References:
 
 - https://docs.docker.com/compose/install/#install-compose
