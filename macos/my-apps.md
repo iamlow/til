@@ -23,6 +23,47 @@ brew install zsh
 chsh -s /usr/bin/zsh
 ```
 
+### How to install oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### How to setup my theme
+
+#### Pure
+
+https://github.com/sindresorhus/pure
+
+#### agnoster
+
+```sh
+# add to ~/.zshrc
+ZSH_THEME="agnoster"
+```
+
+#### powerlevel9k
+
+```sh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k 
+# add to ~/.zshrc
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+### How to install fonts
+
+#### font-awesome-terminal-fonts 
+
+```sh
+brew tap homebrew/cask-fonts
+brew cask install font-awesome-terminal-fonts 
+```
+
+#### powerline fonts
+
+- https://github.com/powerline/fonts
+
+
 ### How to install plugins
 
 ```sh
@@ -55,43 +96,6 @@ plugins=(
     zsh-autosuggestions
 )
 ```
-
-### How to install oh-my-zsh
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-#### How to setup my theme
-
-##### agnoster
-
-```sh
-# add to ~/.zshrc
-ZSH_THEME="agnoster"
-```
-
-##### powerlevel9k
-
-```sh
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k 
-# add to ~/.zshrc
-ZSH_THEME="powerlevel9k/powerlevel9k"
-```
-
-#### How to install fonts
-
-##### font-awesome-terminal-fonts 
-
-```sh
-brew tap homebrew/cask-fonts
-brew cask install font-awesome-terminal-fonts 
-```
-
-##### powerline fonts
-
-- https://github.com/powerline/fonts
-
 
 -   docker
 -   pocket
