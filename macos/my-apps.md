@@ -107,7 +107,13 @@ brew cask install docker
 ```
 
 -   pocket
--   dropbox
+
+## How to install dropbox
+
+```sh
+brew cask install dropbox
+```
+
 -   pycharm ce
 -   firefox
 -   grammarly
