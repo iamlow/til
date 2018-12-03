@@ -7,7 +7,12 @@
 -   spectacle
 -   chrome
 -   msoffice for mac
--   iterm2
+
+## iterm2
+
+```sh
+brew cask install iterm2
+```
 
 ## zsh
 
@@ -142,3 +147,7 @@ plugins=(
    alias vimdiff="nvim -d"
    export EDITOR=/usr/local/bin/nvim
    ```
+
+**References:**
+
+https://sourabhbajaj.com/mac-setup/iTerm/
