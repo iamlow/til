@@ -114,6 +114,12 @@ brew cask install docker
 brew cask install dropbox
 ```
 
+## How to install slack
+
+```sh
+brew cask install slack
+```
+
 -   pycharm ce
 -   firefox
 -   grammarly
