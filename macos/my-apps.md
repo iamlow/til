@@ -100,7 +100,12 @@ plugins=(
 )
 ```
 
--   docker
+## How to install docker
+
+```sh
+brew cask install docker
+```
+
 -   pocket
 -   dropbox
 -   pycharm ce
