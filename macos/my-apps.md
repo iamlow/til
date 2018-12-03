@@ -70,6 +70,13 @@ brew cask install font-awesome-terminal-fonts
 brew install zsh-completions zsh-syntax-highlighting zsh-autosuggestions
 ```
 
+```sh
+# add to ~/.zshrc
+fpath=(/usr/local/share/zsh-completions $fpath)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
 **OR**
 
 ```sh
@@ -82,17 +89,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # zsh-autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
-
-#### Setting
-
-```sh
-# add to ~/.zshrc
-fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-```
-
-**OR**
 
 ```sh
 # add to ~/.zshrc
