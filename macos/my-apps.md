@@ -19,8 +19,41 @@ brew cask install iterm2
 ### how to install
 
 ```sh
-brew install zsh zsh-completions
+brew install zsh
 chsh -s /usr/bin/zsh
+```
+
+### How to install plugins
+
+```sh
+brew install zsh-completions zsh-syntax-highlighting zsh-autosuggestions
+
+vi ~/.zshrc
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
+OR
+
+```sh
+# zsh-completions
+git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+
+# zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+# add to ~/.zshrc
+plugins=(
+    git
+    zsh-completions
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 ```
 
 ### How to install oh-my-zsh
@@ -59,22 +92,6 @@ brew cask install font-awesome-terminal-fonts
 
 - https://github.com/powerline/fonts
 
-#### How to install plugins
-
-```sh
-# zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# zsh-autosuggestions
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-# add to ~/.zshrc
-plugins=(
-    git
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-)
-```
 
 -   docker
 -   pocket
