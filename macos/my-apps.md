@@ -4,9 +4,14 @@
 -   vscode
 -   sublime text
 -   etcher
--   spectacle
 -   chrome
 -   msoffice for mac
+
+## spectacle
+
+```sh
+brew cask install spectacle
+```
 
 ## iterm2
 
