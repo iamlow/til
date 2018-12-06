@@ -70,7 +70,13 @@ OpenSSL version: OpenSSL 1.0.2g-fips  1 Mar 2016
 
 ```sh
 sudo apt-get remove docker-compose
+
 sudo apt-get install python-pip
+# OR
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+https://pip.pypa.io/en/stable/installing/
 sudo pip install docker-compose
 ```
 
