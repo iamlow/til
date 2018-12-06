@@ -76,7 +76,6 @@ sudo apt-get install python-pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 
-https://pip.pypa.io/en/stable/installing/
 sudo pip install docker-compose
 ```
 
