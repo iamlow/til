@@ -1,11 +1,16 @@
 # My Apps for Mac
 
 -   atom
--   vscode
 -   sublime text
 -   etcher
 -   chrome
 -   msoffice for mac
+
+## visual studio code
+
+```sh
+brew cask install visual-studio-code
+```
 
 ## spectacle
 
