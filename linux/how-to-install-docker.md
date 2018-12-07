@@ -91,6 +91,9 @@ docker-compose version 1.22.0, build f46880f
 ```sh
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
+#OR
+curl -sSL https://get.docker.com | sh
+
 sudo docker run hello-world
 ```
 
