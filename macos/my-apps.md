@@ -3,8 +3,13 @@
 -   atom
 -   sublime text
 -   etcher
--   chrome
 -   msoffice for mac
+
+## chrome
+
+```sh
+brew cask install google-chrome
+```
 
 ## visual studio code
 
