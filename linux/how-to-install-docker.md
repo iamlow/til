@@ -44,7 +44,7 @@ sudo apt-get install docker-ce
 ### Verify the installation
 
 ```sh
-sudo docker run hello-world
+sudo docker run --rm hello-world
 ```
 
 ### Add user to group docker
