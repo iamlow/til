@@ -32,7 +32,7 @@ sudo usermod -aG sudo iamlow
 ### Install zsh
 
 ```sh
-sudo apt-get install git-core zsh zsh-syntax-highlighting
+sudo apt-get install git-core zsh #zsh-syntax-highlighting
 ```
 
 ### Change my default shell
