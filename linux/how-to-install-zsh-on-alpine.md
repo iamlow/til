@@ -24,7 +24,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 #### Theme
 
-https://github.com/sindresorhus/pure **(X)**
+https://github.com/sindresorhus/pure
 
 ### Install plugins
 
