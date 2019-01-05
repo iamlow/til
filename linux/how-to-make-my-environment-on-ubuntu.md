@@ -39,6 +39,9 @@ sudo apt-get install git-core zsh #zsh-syntax-highlighting
 
 ```sh
 chsh -s /usr/bin/zsh
+
+# OR
+sudo chsh (user id) -s /bin/zsh
 ```
 
 ### Install oh-my-zsh
