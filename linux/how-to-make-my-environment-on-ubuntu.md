@@ -60,7 +60,18 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 https://github.com/sindresorhus/pure
 
-### Install plugins
+```sh
+git clone https://github.com/sindresorhus/pure.git $ZSH_CUSTOM/themes/pure
+cd $ZSH_CUSTOM/themes/pure
+ln -s "$PWD/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup
+ln -s "$PWD/async.zsh" /usr/local/share/zsh/site-functions/async
+
+# add to ~/.zshrc
+autoload -U promptinit; promptinit
+prompt pure
+```
+
+### Plugins
 
 ```sh
 # zsh-completions
