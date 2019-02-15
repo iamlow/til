@@ -19,6 +19,21 @@ sudo docker run hello-world
 sudo usermod -aG docker pi
 ```
 
+We'll issue the following command to avoid having to log out and log back in for our docker group changes to take effect:
+
+```sh
+newgrp docker
+```
+
+### Verity 
+
+To verify the success of our installation, let's check the Docker version:
+
+```sh
+$ docker --version
+Docker version 18.09.0, build 4d60db4
+```
+
 ## Install a docker-ce manually
 
 ### Set up the docker repository
