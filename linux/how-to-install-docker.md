@@ -118,6 +118,7 @@ docker-compose -v
 docker-compose version 1.22.0, build f46880f
 ```
 
-References:
+## References
 
+- https://thisdavej.com/how-to-install-redis-on-a-raspberry-pi-using-docker/
 - https://docs.docker.com/compose/install/#install-compose
