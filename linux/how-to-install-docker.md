@@ -8,9 +8,9 @@ Just tried installing docker on JetPack 3.2.1 — L4T R28.2.1 for Jetson TX2
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 #OR
+curl -fsSL get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+#OR
 curl -sSL https://get.docker.com | sh
-
-sudo docker run hello-world
 ```
 
 ### Add user to group docker
@@ -32,6 +32,12 @@ To verify the success of our installation, let's check the Docker version:
 ```sh
 $ docker --version
 Docker version 18.09.0, build 4d60db4
+```
+
+### Test hello-world
+
+```sh
+docker run hello-world
 ```
 
 ## Install a docker-ce manually
