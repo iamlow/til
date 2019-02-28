@@ -7,6 +7,10 @@ wget https://download.virtualbox.org/virtualbox/6.0.4/virtualbox-6.0_6.0.4-12841
 sudo dpkg -i virtualbox-6.0_6.0.4-128413\~Ubuntu\~xenial_amd64.deb
 ```
 
+## VMWare ESXi (NOT Tested)
+
+* https://github.com/josenk/vagrant-vmware-esxi
+
 ## Vagrant
 
 ```sh
