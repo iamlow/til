@@ -43,6 +43,10 @@ pip install cookiecutter
 -   https://github.com/pyenv/pyenv
 -   https://github.com/pyenv/pyenv-installer
 
+### Installation on Ubuntu 16.04
+
+https://medium.com/@manivannan_data/install-python3-7-in-ubuntu-16-04-dfd9b4f11e5c
+
 ## pyvenv
 
 ## virtualenv
