@@ -43,6 +43,24 @@ pip install cookiecutter
 -   https://github.com/pyenv/pyenv
 -   https://github.com/pyenv/pyenv-installer
 
+### Installation python 3.7.2 on ubuntu 16.04
+
+```sh
+curl https://pyenv.run | bash
+
+# add to ~/.zshrc
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Prerequisites
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+
+pyenv install 3.7.2
+```
+
 ## pyvenv
 
 ## virtualenv
