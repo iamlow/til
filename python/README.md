@@ -38,16 +38,10 @@ Your code has been rated at 3.64/10 (previous run: 5.91/10, -2.27)
 pip install cookiecutter
 ```
 
-## pyenv
+## pyenv: Simple Python Version Management
 
 -   https://github.com/pyenv/pyenv
 -   https://github.com/pyenv/pyenv-installer
-
-### Installation Python 3.7 on Ubuntu 16.04
-
-**Prerequires:**
-
-https://medium.com/@manivannan_data/install-python3-7-in-ubuntu-16-04-dfd9b4f11e5c
 
 ## pyvenv
 
