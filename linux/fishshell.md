@@ -16,7 +16,7 @@
 
 ```sh
 # prequisites
-sudo apt-get install build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext
+sudo apt-get install -y build-essential cmake ncurses-dev libncurses5-dev libpcre2-dev gettext
 # download
 wget https://github.com/fish-shell/fish-shell/releases/download/3.0.2/fish-3.0.2.tar.gz
 # extract
