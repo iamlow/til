@@ -33,6 +33,14 @@ sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
 chsh -s /usr/local/bin/fish
 ```
 
+**Setting colors:**
+
+```sh
+set fish_color_command green
+```
+
+> ~/.config/fish/fish_variables
+
 ## fisher
 
 **Installation on TX2:**
