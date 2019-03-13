@@ -1,3 +1,7 @@
+# fish shell
+
+## fish
+
 **Installation on TX2:**
 
 ```sh
@@ -22,3 +26,11 @@ chsh -s /usr/local/bin/fish
 **References:**
 
 * https://github.com/fish-shell/fish-shell
+
+## fisher
+
+**Installation on TX2:**
+
+```sh
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+```
