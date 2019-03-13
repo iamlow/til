@@ -1,5 +1,15 @@
 # fish shell
 
+* zsh과 비교하여 사용하기에 쾨적한 느낌이 있음. 
+* 반응속도가 월등히 빠름. JETSON과 같은 ARM환경에서도 잘 동작함...
+* 
+> zsh에서 갈아탈것 같음 느낌...ㅋㅋ
+
+**References:**
+
+* https://github.com/fish-shell/fish-shell
+* https://github.com/jorgebucaran/awesome-fish
+
 ## fish
 
 **Installation on TX2:**
@@ -22,10 +32,6 @@ sudo make install
 # set default shell
 chsh -s /usr/local/bin/fish
 ```
-
-**References:**
-
-* https://github.com/fish-shell/fish-shell
 
 ## fisher
 
