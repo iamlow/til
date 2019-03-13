@@ -13,7 +13,9 @@ mkdir build; cd build
 cmake ..
 make
 sudo make install
-# set default shell (ERROR!)
+# add to /etc/shells
+/usr/local/bin/fish
+# set default shell
 chsh -s /usr/local/bin/fish
 ```
 
