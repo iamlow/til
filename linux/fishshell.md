@@ -2,8 +2,13 @@
 
 * zsh과 비교하여 사용하기에 쾨적한 느낌이 있음. 
 * 반응속도가 월등히 빠름. JETSON과 같은 ARM환경에서도 잘 동작함.
+  > 속도가 느린이유는 pyenv를 환경설정 파일에 적용하면 느려짐.
 * Package Management(fisher)도 잘되어있음.
-> zsh에서 갈아탈것 같음 느낌...ㅋㅋ
+
+**특징:**
+
+* zsh과 달리 script 문법이 bash와 다름.
+> 이것 때문에 못쓰겠음.
 
 **References:**
 
