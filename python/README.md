@@ -78,6 +78,13 @@ eval "$(pyenv init - zsh --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
+## pipenv
+
+```sh
+pip install --user pipenv
+# add to ~/.zshrc
+export PATH="$HOME/.local/bin:$PATH"
+```
 
 ## pyvenv
 
