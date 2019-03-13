@@ -67,13 +67,13 @@ add to ~/.zshrc에 3라인만 넣으면 shell 반응이 엄청느려짐..ㅠㅠ
 
 * for bash
 ```sh
-export PATH="$(HOME)/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - bash --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 ```
 * for zsh
 ```sh
-export PATH="$(HOME)/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - zsh --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 ```
