@@ -28,7 +28,7 @@ cmake ..
 make
 sudo make install
 # add to /etc/shells
-/usr/local/bin/fish
+sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
 # set default shell
 chsh -s /usr/local/bin/fish
 ```
