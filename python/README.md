@@ -61,6 +61,8 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 pyenv install 3.7.2
 ```
 
+> add to ~/.zshrc에 3라인만 넣으면 shell 반응이 엄청느려짐..ㅠㅠ
+
 ## pyvenv
 
 ## virtualenv
