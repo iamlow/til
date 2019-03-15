@@ -12,6 +12,12 @@ curl -LO https://stable.release.core-os.net/amd64-usr/current/coreos_production_
 
 ...
 
+### Update docker
+
+```sh
+update_engine_client -update
+```
+
 ## Docker-compoose
 
 ```sh
