@@ -37,3 +37,5 @@ docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.
 * https://coreos.com/os/docs/latest/booting-on-vmware.html
 * https://portainer.readthedocs.io/en/stable/deployment.html#quick-start
 * https://help.iwinv.kr/manual/read.html?idx=548
+* https://kb.vmware.com/s/article/2109161
+
