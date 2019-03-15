@@ -8,6 +8,18 @@
 curl -LO https://stable.release.core-os.net/amd64-usr/current/coreos_production_vmware_ova.ova
 ```
 
+### Installation
+
+...
+
+## Docker-compoose
+
+```sh
+sudo mkdir -p /opt/bin
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /opt/bin/docker-compose
+sudo chmod +x /opt/bin/docker-compose
+```
+
 ## Portainer
 
 ```sh
