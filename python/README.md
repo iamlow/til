@@ -108,6 +108,10 @@ wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 ```
 
+```sh
+curl https://bootstrap.pypa.io/get-pip.py | python - --user
+```
+
 ### locale.Error: unsupported locale setting
 
 ```sh
