@@ -96,6 +96,8 @@ wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 ```
 
+- At once
+
 ```sh
 curl https://bootstrap.pypa.io/get-pip.py | python - --user
 # add to ~/.zshrc
