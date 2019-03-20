@@ -49,7 +49,7 @@ pip install cookiecutter
 curl https://pyenv.run | bash
 
 # add to ~/.zshrc
-export PATH="~/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
