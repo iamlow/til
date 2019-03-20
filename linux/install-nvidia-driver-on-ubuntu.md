@@ -2,6 +2,12 @@
 
 ## On ubuntu 16.04 - Install NVIDIA drivers from Ubuntu
 
+```sh
+sudo apt install ubuntu-drivers-common
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+```
+
 http://christopher5106.github.io/nvidia/2016/12/30/commands-nvidia-install-ubuntu-16-04.html
 
 ## On ubuntu 18.04
