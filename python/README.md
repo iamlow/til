@@ -80,20 +80,6 @@ eval "$(pyenv init - zsh --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
-## pipenv
-
-```sh
-pip install --user pipenv
-# add to ~/.zshrc
-export PATH="$HOME/.local/bin:$PATH"
-```
-
-## pyvenv
-
-## virtualenv
-
-## autoenv
-
 ## pip
 
 ### how to install
@@ -112,6 +98,8 @@ python get-pip.py
 
 ```sh
 curl https://bootstrap.pypa.io/get-pip.py | python - --user
+# add to ~/.zshrc
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ### locale.Error: unsupported locale setting
@@ -141,6 +129,20 @@ export LC_ALL=C
 ```sh
 pip freeze requirements.txt
 ```
+
+## pipenv
+
+```sh
+pip install --user pipenv
+# add to ~/.zshrc
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+## pyvenv
+
+## virtualenv
+
+## autoenv
 
 ### PyPi
 
