@@ -60,10 +60,11 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
 pyenv install 3.7.2
 ```
+**Problem:**
+
+add to ~/.zshrc에 위의 3라인만 넣으면 shell 반응이 엄청느려짐..ㅠㅠ
 
 **Solved:**
-
-add to ~/.zshrc에 3라인만 넣으면 shell 반응이 엄청느려짐..ㅠㅠ
 
 * for bash
 ```sh
@@ -71,6 +72,7 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init - bash --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 ```
+
 * for zsh
 ```sh
 export PATH="$HOME/.pyenv/bin:$PATH"
