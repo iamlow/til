@@ -44,6 +44,45 @@ chsh -s /usr/bin/zsh
 sudo chsh (user id) -s /bin/zsh
 ```
 
+### Antigen
+
+https://github.com/zsh-users/antigen/wiki/Quick-start
+
+**Installation:**
+
+```sh
+curl -L git.io/antigen > antigen.zsh
+```
+
+**Configure:**
+
+```sh
+source $HOME/antigen.zsh
+    
+# Load the oh-my-zsh's library
+antigen use oh-my-zsh
+
+antigen bundle <<EOBUNDLES
+    # Bundles from the default repo (robbyrussell's oh-my-zsh)
+    git
+
+    # Syntax highlighting bundle.
+    zsh-users/zsh-syntax-highlighting
+
+    # Fish-like auto suggestions
+    zsh-users/zsh-autosuggestions
+
+    # Extra zsh completions
+    zsh-users/zsh-completions
+EOBUNDLES
+
+# Load the theme
+antigen theme refined
+
+# Tell antigen that you're done
+antigen apply
+```
+
 ### Install oh-my-zsh
 
 ```sh
@@ -112,5 +151,5 @@ wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh
 
 **References:**
 
-- https://mayccoll.github.io/Gogh/#0
-
+* https://mayccoll.github.io/Gogh/#0
+* https://github.com/zsh-users/antigen
