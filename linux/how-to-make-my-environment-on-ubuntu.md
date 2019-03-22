@@ -56,6 +56,8 @@ curl -L git.io/antigen > antigen.zsh
 
 **Configure:**
 
+add to ~/.zshrc
+
 ```sh
 source $HOME/antigen.zsh
     
