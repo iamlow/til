@@ -63,8 +63,15 @@ https://github.com/sindresorhus/pure
 ```sh
 git clone https://github.com/sindresorhus/pure.git $ZSH_CUSTOM/themes/pure
 cd $ZSH_CUSTOM/themes/pure
-ln -s "$PWD/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup
-ln -s "$PWD/async.zsh" /usr/local/share/zsh/site-functions/async
+
+# global
+sudo ln -s "$PWD/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup
+sudo ln -s "$PWD/async.zsh" /usr/local/share/zsh/site-functions/async
+
+# OR user
+mkdir -p $ZSH/functions
+ln -s "$PWD/pure.zsh" $ZSH/functions/prompt_pure_setup
+ln -s "$PWD/async.zsh" $ZSH/functions/async
 
 # add to ~/.zshrc
 autoload -U promptinit; promptinit
