@@ -69,7 +69,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 
 # Load the theme
-antigen theme refined
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 # Tell antigen that you're done
 antigen apply
