@@ -7,7 +7,7 @@ Install python-networkmanager on Ubuntu 16.04
 ```sh
 sudo apt-get install libdbus-glib-1-dev libdbus-1-dev
 ```
-> pycario, pygobject, 
+> pycario, pygobject 
 
 ```sh
 sudo apt-get install libgirepogitory1.0-dev
