@@ -157,3 +157,13 @@ pip install setuptools
 ```
 
 ### setup.py
+
+
+## python on mac
+
+```sh
+# python 2.7.X
+brew install python@2
+# python 3.X
+brew install python
+```
