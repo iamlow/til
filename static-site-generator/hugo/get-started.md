@@ -3,6 +3,8 @@ Get Started
 
 # Quick Start
 
+* https://gohugo.io/getting-started/quick-start/
+
 ## Install Hugo for macOS
 ```sh
 brew install hugo
