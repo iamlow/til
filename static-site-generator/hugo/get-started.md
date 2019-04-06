@@ -90,7 +90,23 @@ From **Source**, select “master branch” and then **Save**.
 ## Connect to the site with a browser
 [`https://iamlow.github.io/hugo-pages`](https://iamlow.github.io/hugo-pages)
 
-# References
+## Like themes
+
+### Requirements
+
+* White background
+* Single Page
+
+### Candidates
+
+* https://themes.gohugo.io/hugo-coder/
+* https://themes.gohugo.io/hugo-fresh/
+* https://themes.gohugo.io/hugo-theme-introduction/
+* https://themes.gohugo.io/slick/
+* https://themes.gohugo.io/hugo-theme-terminal/
+* https://themes.gohugo.io/theme/hugo-elate-theme/
+
+## References
 - https://gohugo.io/getting-started/quick-start/
 - https://gohugo.io/getting-started/usage/
 - https://gohugo.io/hosting-and-deployment/hosting-on-github/
