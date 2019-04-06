@@ -105,6 +105,7 @@ From **Source**, select “master branch” and then **Save**.
 * https://themes.gohugo.io/slick/
 * https://themes.gohugo.io/hugo-theme-terminal/
 * https://themes.gohugo.io/theme/hugo-elate-theme/
+* https://themes.gohugo.io/theme/restaurant-hugo/#subscribe
 
 ## References
 - https://gohugo.io/getting-started/quick-start/
