@@ -97,6 +97,11 @@ From **Source**, select “master branch” and then **Save**.
 * White background
 * Single Page
 
+### Best themes
+
+* https://uicard.io/blog/10-best-hugo-themes-2018/
+* https://themefisher.com/best-hugo-themes/
+
 ### Candidates
 
 * https://themes.gohugo.io/hugo-coder/
