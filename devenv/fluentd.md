@@ -10,6 +10,12 @@
 curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent3.sh | sh
 ```
 
+**start:**
+
+```sh
+sudo systemctl start td-agent.service
+```
+
 ## Check
 
 **show log messages:**
