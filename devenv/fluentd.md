@@ -4,7 +4,7 @@
 
 * https://docs.fluentd.org/v1.0/articles/before-install
 
-**installation:**
+### installation package
 
 ```sh
 curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent3.sh | sh
@@ -14,6 +14,12 @@ curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent3.sh 
 
 ```sh
 sudo systemctl start td-agent.service
+```
+
+### installation docker image
+
+```sh
+docker run -d -p 24224:24224 -p 24224:24224/udp -v /data:/fluentd/log --name fluentd fluent/fluentd
 ```
 
 ## Check
