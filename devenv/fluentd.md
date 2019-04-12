@@ -74,5 +74,6 @@ python
 **References:**
 
 * https://docs.fluentd.org/v1.0/articles/quickstart
+* https://docs.fluentd.org/v1.0/articles/python
 * https://github.com/fluent/fluent-bit/
 * https://github.com/fluent/fluent-logger-python
