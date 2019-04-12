@@ -35,7 +35,7 @@ sudo vi /etc/td-agent/td-agent.conf
 
 Fluentd daemon must be launched with a tcp source configuration
 
-```sh
+```xml
 <source>
   type forward
   port 24224
@@ -44,7 +44,7 @@ Fluentd daemon must be launched with a tcp source configuration
 
 To quickly test your setup, add a matcher that logs to the stdout
 
-```sh
+```xml
 <match app.**>
   type stdout
 </match>
