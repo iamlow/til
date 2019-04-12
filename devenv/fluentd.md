@@ -54,7 +54,7 @@ To quickly test your setup, add a matcher that logs to the stdout
 
 **installation python fluentd logger and send log messages:**
 
-```sh
+```
 pipenv --three
 pipenv install fluent-logger
 pipenv shell
