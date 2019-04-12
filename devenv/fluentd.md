@@ -16,12 +16,6 @@ curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent3.sh 
 sudo systemctl start td-agent.service
 ```
 
-### installation docker image
-
-```sh
-docker run -d -p 24224:24224 -p 24224:24224/udp -v /data:/fluentd/log --name fluentd fluent/fluentd
-```
-
 ## Check
 
 **show log messages:**
@@ -75,6 +69,20 @@ python
 >>> logger = sender.FluentSender('app')
 >>> logger.emit('follow', {'from': 'userA', 'to': 'userB'})
 >>> logger.close()
+```
+
+## Docker
+
+### installation docker image
+
+```sh
+docker run -d -p 24224:24224 -p 24224:24224/udp -v /data:/fluentd/log --name fluentd fluent/fluentd
+```
+
+### show log message
+
+```sh
+tail -f /data/data.b58650af3857144aa19c0330883935da0.log
 ```
 
 **References:**
