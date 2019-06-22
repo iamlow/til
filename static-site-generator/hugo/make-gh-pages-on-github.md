@@ -15,7 +15,7 @@ git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
 rm -rf !$/.git
 rm config.toml
 curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
-# replace to https://iamlow.github.io/artepiano on base_url
+# replace to https://iamlow.github.io/artepiano/ on baseURL
 # git add directories
 git commit -m "first commit"
 echo "public" >> .gitignore
