@@ -9,7 +9,7 @@
 ## Trace
 
 ```sh
-git clone https://github.com/iamlow/artepiano
+git clone https://github.com/iamlow/artepiano.git
 hugo new site artepiano --force && cd artepiano
 git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
 rm -rf !$/.git
