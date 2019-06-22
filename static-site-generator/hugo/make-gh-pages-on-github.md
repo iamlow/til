@@ -15,17 +15,17 @@ git clone https://github.com/StefMa/hugo-fresh themes/hugo-fresh
 rm -rf !$/.git
 rm config.toml
 curl -O https://raw.githubusercontent.com/StefMa/hugo-fresh/master/exampleSite/config.yaml
+echo "public" >> .gitignore
+# create a publish_to_ghpages.sh
 # replace to https://iamlow.github.io/artepiano/ on baseURL
 # git add directories
 git commit -m "first commit"
-echo "public" >> .gitignore
 git remote rename origin upstream
 git checkout --orphan gh-pages
 git reset --hard
 git commit --allow-empty -m "Initializing gh-pages branch"
 git push upstream gh-pages
 git checkout master
-# create a publish_to_ghpages.sh
 sh ./publish_to_ghpages.sh
 git push --all
 ```
