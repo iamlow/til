@@ -19,8 +19,9 @@ source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Load the theme
-#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-antigen bundle sindresorhus/pure
+# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+# antigen bundle sindresorhus/pure
+antigen theme romkatv/powerlevel10k
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
@@ -56,6 +57,14 @@ antigen apply
 [[ -s "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
 ```
 
+**Pure Power:**
+
+```sh
+( cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower )
+echo 'source ~/.purepower' >>! ~/.zshrc
+```
+
 **References:**
 
 * https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH?source=post_page---------------------------
+* https://github.com/romkatv/powerlevel10k
