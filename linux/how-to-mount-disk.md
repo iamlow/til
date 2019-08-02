@@ -1,5 +1,11 @@
 # How to mount disk
 
+## Show disks
+
+```sh
+sudo fdisk -l
+```
+
 ## Check the UUID of a disk 
 
 ```sh
