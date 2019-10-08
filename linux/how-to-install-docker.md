@@ -16,7 +16,7 @@ curl -sSL https://get.docker.com | sh
 ### Add user to group docker
 
 ```sh
-sudo usermod -aG docker pi
+sudo usermod -aG docker $USER
 ```
 
 We'll issue the following command to avoid having to log out and log back in for our docker group changes to take effect:
