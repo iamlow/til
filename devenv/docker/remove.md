@@ -10,5 +10,5 @@ docker rm $(docker ps -a -q)
 ## All docker images
 
 ```sh
-docker rmi $(docker images -q)
+docker rmi -f $(docker images -q)
 ```
