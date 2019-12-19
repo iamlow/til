@@ -1,27 +1,16 @@
 **Prerequisites:**
 
 * install zsh
-
 * install antigen
 
 **.zshrc:**
 
 ```sh
-# Load NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Linux antigen file
+# Load antigen file
 source /usr/local/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
-
-# Load the theme
-# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-# antigen bundle sindresorhus/pure
-antigen theme romkatv/powerlevel10k
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
@@ -42,13 +31,13 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle mafredri/zsh-async
 
-# NVM bundle XXX: TOO SLOW!!!
-#export NVM_LAZY_LOAD=true
-#antigen bundle lukechilds/zsh-nvm
-#antigen bundle Sparragus/zsh-auto-nvm-use
-
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme
+# antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+# antigen bundle sindresorhus/pure
+antigen theme romkatv/powerlevel10k
 
 # Tell Antigen that you're done.
 antigen apply
