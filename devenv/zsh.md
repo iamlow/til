@@ -46,13 +46,6 @@ antigen apply
 [[ -s "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
 ```
 
-**Pure Power:**
-
-```sh
-( cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower )
-echo 'source ~/.purepower' >>! ~/.zshrc
-```
-
 **References:**
 
 * https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH?source=post_page---------------------------
