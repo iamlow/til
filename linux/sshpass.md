@@ -6,6 +6,13 @@ Sshpass is a tool for non-interactivly performing password authentication with S
 ### How to install
 ##### Mac OS:
 
+```sh
+brew tap esolitos/ipa
+brew install sshpass
+```
+
+OR
+
 **Deprecated**
 ```sh
 brew install https://raw.github.com/eugeneoden/homebrew/eca9de1/Library/Formula/ss
@@ -13,6 +20,7 @@ brew install https://raw.github.com/eugeneoden/homebrew/eca9de1/Library/Formula/
 
 OR
 
+**Deprecated**
 ```sh
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 ```
